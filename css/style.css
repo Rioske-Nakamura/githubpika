@@ -1,6 +1,4 @@
-
-/*mano que porra de bagunça é essa mds*/
-/*/////////////////////////////////////////////////////////////////////*/
+/* Estilos gerais */
 body {
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -8,40 +6,23 @@ body {
     font-weight: bold;
     background-color: rgb(73, 72, 72);
     color: rgb(221, 221, 221);
-
 }
 
-/* classes */
-
+/* Container principal */
 .container {
-/*border: solid blue 10px;*/
-/*border-style: solid;
-border-color: blue; 
-border-width: 3px;*/
-font-size: 25px;
-min-height: 100px;
-height: 100%;
-text-align: center;
-width: 100%;
-background-color: rgb(255, 216, 216);
-padding-top: 40px;
-padding-bottom: 40px;
-word-spacing: 5px;
-margin: auto;
-}
-
-/* Banner */
-.banner {
-    height: 150px;
-    background-color: blanchedalmond;
+    font-size: 25px;
+    min-height: 100px;
+    height: 100%;
     text-align: center;
-    line-height: 150px;
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 50px;
+    width: 100%;
+    background-color: rgb(255, 216, 216);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    word-spacing: 5px;
+    margin: auto;
 }
 
-/* Menu */
+/* B/* Menu */
 .menu {
     display: flex;
     justify-content: center;
@@ -70,11 +51,61 @@ margin: auto;
     border-radius: 5px;
 }
 
+/* Adicionando um botão de menu hambúrguer para telas pequenas */
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
 
+@media (max-width: 768px) {
+    .banner {
+        font-size: 2em;
+        height: 120px;
+    }
 
-.corpo{
-    /*height: 400px;*/
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        display: none; /* Inicialmente ocultar o menu em telas pequenas */
+    }
 
+    .menu a {
+        font-size: 1.1em;
+        padding: 8px 12px;
+    }
+
+    /* Exibe o menu quando o hambúrguer for clicado */
+    .menu.open {
+        display: flex;
+    }
+
+    /* Botão hambúrguer */
+    .menu-toggle {
+        display: block;
+    }
+
+    
+}
+
+/* Para telas muito pequenas (dispositivos móveis muito pequenos) */
+@media (max-width: 480px) {
+    .banner {
+        font-size: 1.5em;
+        height: 100px;
+    }
+
+    .menu a {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+
+  
+}
+/* Corpo */
+.corpo {
     min-height: 400px;
     padding: 25px 75px;
     background-color: antiquewhite;
@@ -82,8 +113,8 @@ margin: auto;
     text-align: center;
 }
 
-
-.rodape{
+/* Rodapé */
+.rodape {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -95,6 +126,7 @@ margin: auto;
     background-color: rgb(181, 103, 103);
 }
 
+/* Ajuste de estilo */
 .adjustment {
     text-align: left;
     font-size: 28px;
@@ -103,7 +135,8 @@ margin: auto;
     color: rgb(0, 0, 0);
     background-color: rgb(222, 213, 252);
 }
-.pintura{
+
+.pintura {
     text-align: center;
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
@@ -119,18 +152,18 @@ margin: auto;
     padding: 20px;
 }
 
-/* Estilo para cada card individual */
-.card-container :hover{
+/* Estilo para cada card */
+.card-container :hover {
     transform: scale(1.1);
     transition: transform 0.25s ease-in-out;
 }
+
 .card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-
 }
 
 /* Estilo para as imagens dos cards */
@@ -153,8 +186,69 @@ margin: auto;
     padding: 0 10px 10px;
 }
 
+/* Ajuste de layout do container */
 .conteiro {
     justify-content: center;
     align-items: center;
     padding-left: 50px;
+}
+
+/* Media Queries para responsividade */
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .banner {
+        font-size: 2em;
+        height: 120px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menu a {
+        font-size: 1.1em;
+        padding: 8px 12px;
+    }
+
+    .corpo {
+        padding: 20px 40px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card img {
+        width: 180px;
+        height: 160px;
+    }
+}
+
+/* Para telas muito pequenas (dispositivos móveis muito pequenos) */
+@media (max-width: 480px) {
+    .banner {
+        font-size: 1.5em;
+        height: 100px;
+    }
+
+    .menu a {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+
+    .corpo {
+        padding: 15px 25px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        width: 150px;
+        height: 140px;
+    }
 }
