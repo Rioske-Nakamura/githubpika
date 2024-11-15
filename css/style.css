@@ -3,12 +3,21 @@ body {
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    font-weight: bold;
+    
     background-color: rgb(73, 72, 72);
     color: rgb(221, 221, 221);
 }
 
-/* Container principal */
+body, .menu, .rodape {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     font-size: 25px;
     min-height: 100px;
@@ -22,7 +31,6 @@ body {
     margin: auto;
 }
 
-/* B/* Menu */
 .menu {
     display: flex;
     justify-content: center;
@@ -51,7 +59,6 @@ body {
     border-radius: 5px;
 }
 
-/* Adicionando um botão de menu hambúrguer para telas pequenas */
 .menu-toggle {
     display: none;
     font-size: 2em;
@@ -68,8 +75,8 @@ body {
     .menu {
         flex-direction: column;
         gap: 10px;
-        padding: 10px;
-        display: none; /* Inicialmente ocultar o menu em telas pequenas */
+       
+        display: none; 
     }
 
     .menu a {
@@ -77,12 +84,10 @@ body {
         padding: 8px 12px;
     }
 
-    /* Exibe o menu quando o hambúrguer for clicado */
     .menu.open {
         display: flex;
     }
 
-    /* Botão hambúrguer */
     .menu-toggle {
         display: block;
     }
@@ -90,7 +95,7 @@ body {
     
 }
 
-/* Para telas muito pequenas (dispositivos móveis muito pequenos) */
+
 @media (max-width: 480px) {
     .banner {
         font-size: 1.5em;
@@ -102,9 +107,12 @@ body {
         padding: 6px 10px;
     }
 
+
   
 }
-/* Corpo */
+
+
+
 .corpo {
     min-height: 400px;
     padding: 25px 75px;
@@ -113,7 +121,8 @@ body {
     text-align: center;
 }
 
-/* Rodapé */
+
+
 .rodape {
     display: flex;
     flex-direction: column;
@@ -126,7 +135,8 @@ body {
     background-color: rgb(181, 103, 103);
 }
 
-/* Ajuste de estilo */
+
+
 .adjustment {
     text-align: left;
     font-size: 28px;
@@ -144,18 +154,20 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-/* Estilo para a seção de cards */
+
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 40px;
     padding: 20px;
 }
 
-/* Estilo para cada card */
+
 .card-container :hover {
     transform: scale(1.1);
     transition: transform 0.25s ease-in-out;
+    gap: 20px;
 }
 
 .card {
@@ -164,38 +176,41 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
+    box-shadow: 
+    -5px 5px 10px rgba(0, 255, 60, 0.9), /* Sombra azul */
+    5px 5px 10px rgba(255, 0, 0, 0.5), /* Sombra vermelha */
+    -5px -5px 10px rgba(255, 255, 0, 0.868),
+    5px -5px 10px rgba(0, 0, 255, 0.5);
 }
 
-/* Estilo para as imagens dos cards */
+
 .card img {
     width: 230px;
     height: 200px;
 }
 
-/* Estilo para o título dos cards */
+
 .card h3 {
     font-size: 1.2rem;
     color: #333;
     margin: 10px 0;
 }
 
-/* Estilo para a descrição dos cards */
+
 .card p {
     font-size: 0.9rem;
     color: #666;
     padding: 0 10px 10px;
 }
 
-/* Ajuste de layout do container */
+
 .conteiro {
     justify-content: center;
     align-items: center;
     padding-left: 50px;
 }
 
-/* Media Queries para responsividade */
 
-/* Para telas pequenas (celulares) */
 @media (max-width: 768px) {
     .banner {
         font-size: 2em;
@@ -205,7 +220,7 @@ body {
     .menu {
         flex-direction: column;
         gap: 10px;
-        padding: 10px;
+       
     }
 
     .menu a {
