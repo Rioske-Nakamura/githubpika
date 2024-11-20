@@ -17,190 +17,131 @@
 
 <body>
     
-    <header>
-        <nav class="banner">
-            <!-- Botão hambúrguer -->
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/html/shonen">Shonen</a></li>
-                <li><a href="/html/shoujo">Shoujo</a></li>
-                <li><a href="/html/mecha">Mecha</a></li>
-                <li><a href="/html/autores">Autores</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="conteiner">
+    <nav class="banner">
+        <!-- Botão hambúrguer -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/html/shonen">Shonen</a></li>
+            <li><a href="/html/shoujo">Shoujo</a></li>
+            <li><a href="/html/mecha">Mecha</a></li>
+            <li><a href="/html/autores">Autores</a></li>
+        </ul>
+    </nav>
+    <div class="conteiro">
     <h1>Curiosidades de Animes</h1>
     
     <p>Esta é uma lista de curiosidades sobre os principais animes e mangás do mundo.</p>
     <h2>Animes famosos</h2>
     <section class="card-container">
         <!-- Curiosidades de Shonen -->
-        <input type="checkbox" id="btn1" hidden>
         <div class="card">
-            <label for="btn1" class="spin">
-                <img src="./images/naruto.jpg" alt="Naruto Uzumaki" width="100">
-                <h3>Naruto Uzumaki</h3>
-                <p>O nome "Naruto" vem de uma cidade real no Japão famosa pelos redemoinhos no mar.</p>
-            </label>
+            <img src="./images/naruto.jpg" alt="Naruto Uzumaki" width="100">
+            <h3>Naruto Uzumaki</h3>
+            <p>O nome "Naruto" vem de uma cidade real no Japão famosa pelos redemoinhos no mar.</p>
+        </div>
+        <div class="card">
+            <img src="./images/luffy.jpg" alt="Monkey D. Luffy" width="100">
+            <h3>Monkey D. Luffy</h3>
+            <p>One Piece é o mangá mais vendido de todos os tempos, com mais de 500 milhões de cópias.</p>
+        </div>
+        <div class="card">
+            <img src="./images/goku.jpg" alt="Goku" width="100">
+            <h3>Goku</h3>
+            <p>Goku foi inspirado na lenda chinesa de "Jornada ao Oeste".</p>
         </div>
         
-        <!-- Card Luffy -->
-        <input type="checkbox" id="btn2" hidden>
+        <!-- Curiosidades de Konosuba -->
         <div class="card">
-            <label for="btn2" class="spin">
-                <img src="./images/luffy.jpg" alt="Monkey D. Luffy" width="100">
-                <h3>Monkey D. Luffy</h3>
-                <p>One Piece é o mangá mais vendido de todos os tempos, com mais de 500 milhões de cópias.</p>
-            </label>
-        </div>
-    
-        <!-- Card Goku -->
-        <input type="checkbox" id="btn3" hidden>
-        <div class="card">
-            <label for="btn3" class="spin">
-                <img src="./images/goku.jpg" alt="Goku" width="100">
-                <h3>Goku</h3>
-                <p>Goku foi inspirado na lenda chinesa de "Jornada ao Oeste".</p>
-            </label>
-        </div>
-    
-    
-    <!-- Curiosidades de Konosuba -->
-  
-        <input type="checkbox" id="btn4" hidden>
-        <div class="card">
-            <label for="btn4" class="spin">
-                <img src="./images/konosuba.jpg" alt="Konosuba" width="100">
-                <h3>Konosuba</h3>
-                <p>O autor de Konosuba, Natsume Akatsuki, começou a série como uma web novel antes de ser publicada oficialmente.</p>
-            </label>
+            <img src="./images/konosuba.jpg" alt="Konosuba" width="100">
+            <h3>Konosuba</h3>
+            <p>O autor de Konosuba, Natsume Akatsuki, começou a série como uma web novel antes de ser publicada oficialmente.</p>
         </div>
     </section>
-    
-    <h2>Animes que ninguém conhece a história</h2>
+
+    <h2>Animes que ninguem conhece a história</h2>
     <section class="card-container">
-        <input type="checkbox" id="btn5" hidden>
+
+        <!-- Curiosidades de Shoujo -->
         <div class="card">
-            <label for="btn5" class="spin">
-                <img src="./images/sailor_moon.jpg" alt="Sailor Moon" width="100">
-                <h3>Sailor Moon</h3>
-                <p>Sailor Moon popularizou o gênero "magical girl" em todo o mundo.</p>
-            </label>
+            <img src="./images/sailor_moon.jpg" alt="Sailor Moon" width="100">
+            <h3>Sailor Moon</h3>
+            <p>Sailor Moon popularizou o gênero "magical girl" em todo o mundo.</p>
         </div>
-    
-        <input type="checkbox" id="btn6" hidden>
         <div class="card">
-            <label for="btn6" class="spin">
-                <img src="./images/cardcaptor_sakura.jpg" alt="Cardcaptor Sakura" width="100">
-                <h3>Cardcaptor Sakura</h3>
-                <p>Originalmente, Sakura foi criada como uma personagem secundária.</p>
-            </label>
+            <img src="./images/cardcaptor_sakura.jpg" alt="Cardcaptor Sakura" width="100">
+            <h3>Cardcaptor Sakura</h3>
+            <p>Originalmente, Sakura foi criada como uma personagem secundária.</p>
         </div>
-    
-        <input type="checkbox" id="btn7" hidden>
         <div class="card">
-            <label for="btn7" class="spin">
-                <img src="./images/fruit_basket.jpg" alt="Fruits Basket" width="100">
-                <h3>Fruits Basket</h3>
-                <p>O mangá Fruits Basket foi um dos primeiros a abordar temas de saúde mental no universo shoujo.</p>
-            </label>
+            <img src="./images/fruit_basket.jpg" alt="Fruits Basket" width="100">
+            <h3>Fruits Basket</h3>
+            <p>O mangá Fruits Basket foi um dos primeiros a abordar temas de saúde mental no universo shoujo.</p>
         </div>
     </section>
-    
+
     <h2> Animes de Mecha</h2>
     <section class="card-container">
-        <input type="checkbox" id="btn8" hidden>
+
+        <!-- Curiosidades de Mecha -->
         <div class="card">
-            <label for="btn8" class="spin">
-                <img src="./images/gundam.jpg" alt="Gundam" width="100">
-                <h3>Gundam</h3>
-                <p>Gundam foi o primeiro anime a introduzir mechas com pilotos humanos.</p>
-            </label>
+            <img src="./images/gundam.jpg" alt="Gundam" width="100">
+            <h3>Gundam</h3>
+            <p>Gundam foi o primeiro anime a introduzir mechas com pilotos humanos.</p>
         </div>
-    
-        <input type="checkbox" id="btn9" hidden>
         <div class="card">
-            <label for="btn9" class="spin">
-                <img src="./images/evangelion.jpg" alt="Evangelion" width="100">
-                <h3>Neon Genesis Evangelion</h3>
-                <p>Evangelion revolucionou o gênero mecha ao focar em temas psicológicos e filosóficos.</p>
-            </label>
+            <img src="./images/evangelion.jpg" alt="Evangelion" width="100">
+            <h3>Neon Genesis Evangelion</h3>
+            <p>Evangelion revolucionou o gênero mecha ao focar em temas psicológicos e filosóficos.</p>
         </div>
-    
-        <input type="checkbox" id="btn10" hidden>
         <div class="card">
-            <label for="btn10" class="spin">
-                <img src="./images/code_geass.jpg" alt="Code Geass" width="100">
-                <h3>Code Geass</h3>
-                <p>Lelouch, de Code Geass, foi inspirado no personagem Light Yagami, de Death Note, em termos de astúcia e complexidade.</p>
-            </label>
+            <img src="./images/code_geass.jpg" alt="Code Geass" width="100">
+            <h3>Code Geass</h3>
+            <p>Lelouch, de Code Geass, foi inspirado no personagem Light Yagami, de Death Note, em termos de astúcia e complexidade.</p>
         </div>
     </section>
-    
-    <h2>Autores de Animes Famosos</h2>
+
+    <h2>Autores de Animes famosos</h2>
     <section class="card-container">
-        <input type="checkbox" id="btn11" hidden>
+        <!-- Curiosidades sobre Autores -->
         <div class="card">
-            <label for="btn11" class="spin">
-                <img src="./images/oda.jpg" alt="Eiichiro Oda" width="100">
-                <h3>Eiichiro Oda</h3>
-                <p>Oda, criador de One Piece, afirma que já planejou o final da série há muitos anos.</p>
-            </label>
+            <img src="./images/oda.jpg" alt="Eiichiro Oda" width="100">
+            <h3>Eiichiro Oda</h3>
+            <p>Oda, criador de One Piece, afirma que já planejou o final da série há muitos anos.</p>
         </div>
-    
-        <input type="checkbox" id="btn12" hidden>
         <div class="card">
-            <label for="btn12" class="spin">
-                <img src="./images/akira_toriyama.jpg" alt="Akira Toriyama" width="100">
-                <h3>Akira Toriyama</h3>
-                <p>Akira Toriyama, criador de Dragon Ball, também desenhou o famoso jogo Chrono Trigger.</p>
-            </label>
+            <img src="./images/akira_toriyama.jpg" alt="Akira Toriyama" width="100">
+            <h3>Akira Toriyama</h3>
+            <p>Akira Toriyama, criador de Dragon Ball, também desenhou o famoso jogo Chrono Trigger.</p>
         </div>
-    
-        <input type="checkbox" id="btn13" hidden>
         <div class="card">
-            <label for="btn13" class="spin">
-                <img src="./images/hayao_miyazaki.jpg" alt="Hayao Miyazaki" width="100">
-                <h3>Hayao Miyazaki</h3>
-                <p>Hayao Miyazaki, fundador do Studio Ghibli, sempre incluiu mensagens ecológicas em seus filmes.</p>
-            </label>
+            <img src="./images/hayao_miyazaki.jpg" alt="Hayao Miyazaki" width="100">
+            <h3>Hayao Miyazaki</h3>
+            <p>Hayao Miyazaki, fundador do Studio Ghibli, sempre incluiu mensagens ecológicas em seus filmes.</p>
         </div>
-    
-        <input type="checkbox" id="btn14" hidden>
         <div class="card">
-            <label for="btn14" class="spin">
-                <img src="./images/rumiko_takahashi.jpg" alt="Rumiko Takahashi" width="100">
-                <h3>Rumiko Takahashi</h3>
-                <p>Rumiko Takahashi, autora de InuYasha e Ranma ½, é uma das mangakás mais bem-sucedidas da história.</p>
-            </label>
+            <img src="./images/rumiko_takahashi.jpg" alt="Rumiko Takahashi" width="100">
+            <h3>Rumiko Takahashi</h3>
+            <p>Rumiko Takahashi, autora de InuYasha e Ranma ½, é uma das mangakás mais bem-sucedidas da história.</p>
         </div>
     </section>
-    
-    <h2>Autores de Animes Favoritos</h2>
+    <h2>Autores de Animes favoritos</h2>
     <section class="card-container">
-        <input type="checkbox" id="btn15" hidden>
+
         <div class="card">
-            <label for="btn15" class="spin">
-                <img src="./images/osamu_tezuka.jpg" alt="Osamu Tezuka" width="100">
-                <h3>Osamu Tezuka</h3>
-                <p>Conhecido como o "pai do mangá", Tezuka criou séries revolucionárias como Astro Boy e Black Jack.</p>
-            </label>
+            <img src="./images/osamu_tezuka.jpg" alt="Osamu Tezuka" width="100">
+            <h3>Osamu Tezuka</h3>
+            <p>Conhecido como o "pai do mangá", Tezuka criou séries revolucionárias como Astro Boy e Black Jack.</p>
         </div>
-    
-        <input type="checkbox" id="btn16" hidden>
+
         <div class="card">
-            <label for="btn16" class="spin">
-                <img src="./images/noboru_yamaguchi.jpg" alt="Zero no Tsukaima" width="100">
-                <h3>Noboru Yamaguchi</h3>
-                <p>Noboru Yamaguchi, autor de Zero no Tsukaima, teve um grande impacto no gênero de fantasia escolar, mas infelizmente faleceu antes de completar a obra. O final da série foi escrito com base em suas anotações e rascunhos.</p>
-            </label>
+            <img src="./images/noboru_yamaguchi.jpg" alt="Zero no Tsukaima" width="100">
+            <h3>Noboru Yamaguchi</h3>
+            <p>Noboru Yamaguchi, autor de Zero no Tsukaima, teve um grande impacto no gênero de fantasia escolar, mas infelizmente faleceu antes de completar a obra. O final da série foi escrito com base em suas anotações e rascunhos.</p>
         </div>
+        
     </section>
-    
    
 </div>
     <footer class="rodape">
