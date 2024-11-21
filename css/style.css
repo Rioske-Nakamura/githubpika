@@ -41,7 +41,7 @@ header{
     font-size: 25px;
     min-height: 100px;
     text-align: center;
-    background-color: var(--background-light);
+    background-color: #333;
     padding-top: 90px;
     padding-bottom: 40px;
     margin: auto;
@@ -153,10 +153,11 @@ header{
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 40px;
-    padding: 20px;
+    display: flex;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
+   
 }
 
 .card {
